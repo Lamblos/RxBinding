@@ -37,6 +37,7 @@ android {
 
   dexOptions {
     preDexLibraries = !rootProject.ext.ci
+    dexInProcess = !rootProject.exit.ci
   }
 
   lintOptions {
